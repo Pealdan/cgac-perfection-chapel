@@ -1,0 +1,178 @@
+<!-- sermons.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sermons | CGAC - The Perfection Chapel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    :root {
+      --blue: #003366;
+      --red: #cc0000;
+    }
+
+    .navbar {
+      background-color: var(--blue);
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: white;
+    }
+
+    .navbar-nav .nav-link {
+      color: white !important;
+    }
+
+    h1, h2 {
+      color: var(--blue);
+    }
+
+    .sermon-card {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .btn-download {
+      background-color: var(--red);
+      color: white;
+    }
+
+    .btn-download:hover {
+      background-color: #a80000;
+      color: white;
+    }
+
+    footer {
+      background: var(--blue);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">CGAC | Perfection Chapel</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="sermons.html" class="nav-link active">Sermons</a></li>
+        <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+        <li class="nav-item"><a href="give.html" class="nav-link">Give</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Sermons Section -->
+<section class="py-5">
+  <div class="container">
+    <h1 class="text-center mb-5">Latest Sermons</h1>
+    
+    <div class="row">
+      <!-- Video Sermon 1 -->
+      <div class="col-md-6 mb-4">
+        <div class="card sermon-card">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/TODO_VIDEO_ID1" title="Sermon Video 1" allowfullscreen></iframe>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-primary">The Power of Holiness</h5>
+            <p class="card-text">A powerful teaching on living a sanctified life that pleases God.</p>
+            <a href="downloads/power-of-holiness.mp3" class="btn btn-download btn-sm" download>Download Audio</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Sermon 2 -->
+      <div class="col-md-6 mb-4">
+        <div class="card sermon-card">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/TODO_VIDEO_ID2" title="Sermon Video 2" allowfullscreen></iframe>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-primary">Revival Fire</h5>
+            <p class="card-text">Stirring your spirit for prayer, revival, and evangelism.</p>
+            <a href="downloads/revival-fire.mp3" class="btn btn-download btn-sm" download>Download Audio</a>
+          </div>
+          <h2 class="text-center mt-5 mb-4">More Video Sermons</h2>
+<div class="row">
+.<!-- TikTok Sermon -->
+<div class="col-md-6 mb-4">
+  <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@yourusername/video/1234567890123456789" data-video-id="1234567890123456789" style="max-width: 100%; min-width: 325px;">
+    <section>Loading TikTok...</section>
+  </blockquote>
+  <script async src="https://www.tiktok.com/embed.js"></script>
+</div>
+  <!-- Facebook embed here -->
+  <!-- Facebook Sermon -->
+<div class="col-md-6 mb-4">
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" 
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0"></script>
+
+  <div class="fb-video" 
+       data-href="https://www.facebook.com/yourpage/videos/1234567890123456/" 
+       data-width="500" 
+       data-show-text="false">
+    <blockquote cite="https://www.facebook.com/yourpage/videos/1234567890123456/" class="fb-xfbml-parse-ignore">
+      <a href="https://www.facebook.com/yourpage/videos/1234567890123456/">Watch on Facebook</a>
+    </blockquote>
+  </div>
+.         </div>
+.         </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+    <h2 class="text-center mb-4">Audio Sermons</h2>
+    <div class="row">
+      <!-- Audio Sermon -->
+      <div class="col-md-6 mb-3">
+        <div class="card sermon-card p-3">
+          <h5 class="text-primary">The Voice of God</h5>
+          <audio controls class="w-100 mb-2">
+            <source src="downloads/voice-of-god.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+          <a href="downloads/voice-of-god.mp3" class="btn btn-download btn-sm" download>Download Audio</a>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <div class="card sermon-card p-3">
+          <h5 class="text-primary">Walking in the Spirit</h5>
+          <audio controls class="w-100 mb-2">
+            <source src="downloads/walking-in-the-spirit.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+          <a href="downloads/walking-in-the-spirit.mp3" class="btn btn-download btn-sm" download>Download Audio</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Christ Gospel Apostolic Church – The Perfection Chapel. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
